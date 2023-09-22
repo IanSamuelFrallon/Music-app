@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="https://www.instagram.com/visuallywandering/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="music-player">
+        <div class="album-cover">
+            <img src="" alt="Album Cover" id="album-cover">
+        </div>
+        <div class="song-info">
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist">Artist</p>
+        </div>
+        <div class="like-button">
+            <i id="heart-icon" class="fa-solid fa-heart"></i>
+          </div>
+        <audio id="audio" src=""></audio>
+        <progress id="progress-bar" class="custom-progress-bar" value="0" max="100" ></progress>
+        <div class="music-timestamp">
+            <p id="timestamp">00:00 / 00:00</p>
+        </div>
+    </div>
+    <div class="player-controls">
+        <button id="repeat" class="control-button"><i class="fas fa-redo"></i></button>
+        <button id="prev" class="control-button"><i class="fas fa-step-backward"></i></button>
+        <button id="play" class="control-button"><i class="fas fa-play"></i></button>
+        <button id="next" class="control-button"><i class="fas fa-step-forward"></i></button>
+        <div class="volume-control">
+            <i id="volume-icon" class="fas fa-volume-up"></i>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+    <div class="lyrics">
+        <p id="lyrics-text">Lyrics will appear here.</p>
+    </div>
+    <script src="scripts.js"></script>
+
+    <div class="music-player-nav">
+        <a href="#" class="nav-item"><i class="fas fa-home"></i>Home</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+        <a href="#" class="nav-item"><i class="fas fa-music"></i> Your Music</a>
+      </div>
+      
+          <footer>
+              <p>&copy; 2023 Ian Samuel Frallon. All rights reserved.</p>
+          </footer>
+      </body>
+      </html>
+      
+</body>     
+</html>
+
+
+
+

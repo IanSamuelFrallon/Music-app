@@ -1,0 +1,287 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-image: url('pexels-jess-loiterton-4612304.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background fixed as you scroll */
+    /* You can adjust other background properties like background-color, opacity, etc., to suit your design */
+
+}
+
+/* Apply a background color and text color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the music player container */
+.music-player {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the album cover */
+.album-cover img {
+    width: 290x;
+    height: 290px;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the song info */
+.song-info {
+    margin-top: 10px;
+}
+
+.song-info h2 {
+    font-size: 24px;
+}
+
+.song-info p {
+    font-size: 18px;
+}
+
+/* Style the progress bar */
+#progress-bar {
+    width: 50%;
+    height: 10px;
+    color: white;
+    margin-top: 20px;
+    background-color: #e6d5d5;
+}
+
+/* Custom Progress Bar Styles */
+.custom-progress-bar {
+    width: 100%; /* Full width */
+    height: 10px; /* Height of the progress bar */
+    border: none; /* Remove the default border */
+    background-color: #f0f0f0; /* Background color of the progress bar track */
+    border-radius: 30px; /* Rounded corners */
+    margin: 10px 0; /* Add margin for spacing */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .custom-progress-bar::-webkit-progress-bar {
+    background-color: #f0f0f0; /* Background color of the progress bar track */
+  }
+  
+  .custom-progress-bar::-webkit-progress-value {
+    background-color: #333; /* Background color of the progress bar fill */
+  }
+  
+
+
+
+
+
+/* Style the volume control */
+.volume-control {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volume-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#volume-slider {
+    width: 150px;
+    -webkit-appearance: none;
+    background-color: #ddd;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+}
+
+/* Style the player controls */
+.player-controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Style the play button differently when it's paused */
+#play i.fa-play {
+    display: inline;
+}
+
+#play i.fa-pause {
+    display: none;
+}
+
+
+.music-timestamp {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#timestamp {
+    color: black;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+
+
+/* Style the auto lyrics */
+.lyrics {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#lyrics-text {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Custom Volume Control Styles */
+.volume-control {
+    display: flex;
+    align-items: center;
+  }
+  
+  #volume-icon {
+    font-size: 24px; /* Adjust icon size */
+    color: black; /* Icon color */
+    margin-right: 10px; /* Add spacing between icon and slider */
+  }
+  
+  #volume-slider {
+    width: 100px; /* Adjust the width of the slider */
+    height: 6px; /* Adjust the height of the slider */
+    background-color: #f0f0f0; /* Slider track background color */
+    border: none; /* Remove the default slider border */
+    border-radius: 3px; /* Add rounded corners to the slider */
+  }
+  
+  #volume-slider::-webkit-slider-thumb {
+    width: 16px; /* Adjust the width of the slider thumb */
+    height: 16px; /* Adjust the height of the slider thumb */
+    background-color: black /* Slider thumb color */
+    border: none; /* Remove the default thumb border */
+    border-radius: 50%; /* Make the thumb circular */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+/* Icon Navigation Styles */
+.music-player-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; /* Set the maximum width for the navigation */
+  
+
+ 
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item i {
+    margin-right: 5px;
+    font-size: 18px; /* Increase the icon size */
+  }
+  
+  /* Add hover effect to the navigation items */
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+ /* Heart Icon Styles */
+.like-button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  #heart-icon {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #ccc; /* Default outline color */
+    margin-left: 0; /* Move the heart icon 10px to the right */
+  }
+  
+  #heart-icon.liked {
+    color: #f00; /* Filled heart color when liked */
+  }
+  
+
+  footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Add padding to the top and bottom of the footer */
+}
+
+/* Style for the copyright text */
+footer p {
+    font-size: 12px; /* Font size */
+    margin: 0; /* Remove default margin */
+}
